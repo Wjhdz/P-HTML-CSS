@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 100;
+}
+
+.field {
+  background-color: #f4f4f4;
+}
+#fields {
+  background-color: #f4f4f4;
+}
+
+.btn {
+  background-color: #1973b8;
+  text-align: center;
+  width: 150px;
+  border: none;
+  outline: none;
+  height: 60px;
+  color: #f4f4f4;
+}
+
+.content-register .btn > p {
+  position: bottom;
+}
+
+form ~ .btn {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.link {
+  color: #197cca;
+  width: 0px;
+  height: 60px;
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  margin: 1.6em auto;
+  font-style: italic;
+  display: grid;
+  gap: 1.6em;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.content-form,
+.content-register {
+  grid-column: span 3;
+  width: 360px;
+  height: 360px;
+}
+
+.content-register {
+  background-color: #004481;
+  color: white;
+  padding: 20px;
+}
+
+.content-form {
+  padding: 20px ;
+  text-align: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.content-info {
+  background-color: #f4f4f4;
+  color: #666666;
+  margin: 1.6em auto;
+  min-width: 200px;
+  grid-column: 1/-1;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-form select[name="select-doc"],
+.content-form input[type="text"],
+.content-form input[type="password"] {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background-color: #f7f7f7;
+  font-size: 1em;
+  color: #333;
+}
+
+@media screen and (max-width: 768px) {
+  .content-form,
+  .content-register {
+    grid-column: 1/-1;
+    min-width: 350px;
+    margin: 1.6em auto;
+  }
+  .content-info{
+    grid-column: 1/-1;
+    min-width: 400px;
+    margin: 1.6em auto;
+  }
+  .container{
+    display: grid;
+    place-content: center;
+    margin: auto;
+  }
+  
+}

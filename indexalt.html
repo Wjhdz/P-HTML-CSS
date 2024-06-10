@@ -1,0 +1,90 @@
+   
+    /* Estilo para el campo de selección */
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Estilo de campo de selección</title>
+      <style>
+        /* Estilo para el campo de selección */
+        select {
+          appearance: none; /* Oculta la apariencia predeterminada del sistema */
+          padding: 10px 30px 10px 10px; /* Espacio alrededor del texto */
+          font-size: 16px; /* Tamaño de fuente */
+          border: 1px solid #ccc; /* Borde */
+          border-radius: 5px; /* Bordes redondeados */
+          background-color: #fff; /* Color de fondo */
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23666"><path d="M7 10l5 5 5-5z" /></svg>'); /* Agrega una imagen SVG como fondo (flecha hacia abajo) */
+          background-repeat: no-repeat; /* Evita que la imagen se repita */
+          background-position: right 10px center; /* Posición de la imagen de fondo */
+          cursor: pointer; /* Cambia el cursor al puntero cuando se pasa por encima */
+        }
+    
+        /* Estilo para la flecha desplegable */
+        select::-ms-expand {
+          display: none; /* Oculta la flecha desplegable en IE/Edge */
+        }
+    
+        /* Cambia el color de fondo cuando el campo está enfocado */
+        select:focus {
+          background-color: #f0f0f0;
+          border-color: #999;
+        }
+    
+        /* Cambia el estilo de la flecha cuando el campo está enfocado */
+        select:focus::-ms-expand {
+          background-color: transparent; /* Cambia el color de fondo de la flecha en IE/Edge cuando está enfocado */
+        }
+    
+        /* Estilo del formulario */
+        body {
+          margin: 0;
+          padding: 0;
+          font-family: Arial, sans-serif;
+          background: linear-gradient(to bottom left, #ffffff, #f0f0f0); /* Gradiente en forma de "V" */
+          height: 100vh; /* Altura completa de la ventana */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+    
+        form {
+          background-color: rgba(255, 255, 255, 0.9); /* Color de fondo del formulario con transparencia */
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+      </style>
+    </head>
+    <body>
+    
+      <!-- Formulario -->
+      <form>
+        <!-- Campo de selección -->
+        <select id="fields">
+          <option value="1">Opción 1</option>
+          <option value="2">Opción 2</option>
+          <option value="3">Opción 3</option>
+          <option value="4">Opción 4</option>
+          <option value="5">Opción 5</option>
+        </select>
+      </form>
+    
+    </body>
+    </html>
+
+</head>
+<body>
+
+  <!-- Campo de selección -->
+  <select id="fields">
+    <option value="1">Opción 1</option>
+    <option value="2">Opción 2</option>
+    <option value="3">Opción 3</option>
+    <option value="4">Opción 4</option>
+    <option value="5">Opción 5</option>
+  </select>
+
+</body>
+</html>
